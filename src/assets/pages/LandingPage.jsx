@@ -1,4 +1,3 @@
-
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -20,15 +19,17 @@ export default function LandingPage() {
   return (
     <section
       onClick={handleScreenClick}
-      className="w-full min-h-screen relative overflow-hidden cursor-pointer"
+      className="w-full min-h-screen relative overflow-hidden cursor-pointer bg-black"
     >
 
       {/* Background Image */}
       <div
         className="
-          absolute inset-0
-          w-full h-full
-          bg-cover
+          absolute
+          inset-0
+          w-full
+          h-full
+          bg-contain
           bg-center
           bg-no-repeat
         "
@@ -38,7 +39,7 @@ export default function LandingPage() {
         }}
       ></div>
 
-      {/* Dark Overlay */}
+      {/* Overlay */}
       <div className="absolute inset-0 bg-black/20"></div>
 
       {/* Start Button */}
@@ -46,14 +47,13 @@ export default function LandingPage() {
         className="
           absolute
           inset-x-0
-          bottom-12
-          sm:bottom-16
-          md:bottom-20
-          lg:bottom-24
+          bottom-8
+          sm:bottom-12
+          md:bottom-16
+          lg:bottom-20
           flex
           justify-center
           px-4
-          sm:px-6
         "
       >
         <button
@@ -63,17 +63,18 @@ export default function LandingPage() {
             hover:bg-purple-700
             active:scale-95
             text-white
-            w-auto
-            px-5 py-2.5
-            sm:px-7 sm:py-3
-            md:px-8 md:py-3
+            px-5
+            py-2.5
+            sm:px-7
+            sm:py-3
+            md:px-8
+            md:py-3
             rounded-lg
-            text-xl
+            text-lg
             sm:text-2xl
             md:text-3xl
             font-bold
             shadow-lg
-            hover:shadow-purple-500/50
             transition-all
             duration-300
           "
@@ -85,4 +86,3 @@ export default function LandingPage() {
     </section>
   );
 }
-
