@@ -18,6 +18,9 @@ export default function GameHome() {
   const playmode1 = () => {
     navigate('/play')
   }
+  const playmode2 = () => {
+    navigate('/play2')
+  }
 
   return (
     <div
@@ -69,6 +72,7 @@ export default function GameHome() {
                   </button>
 
                   <button
+                  onClick={playmode2}
                     className="bg-slate-800 text-white px-5 py-2.5 rounded-lg hover:bg-teal-800 text-lg sm:text-xl transition-all duration-300"
                   >
                     2 Player
