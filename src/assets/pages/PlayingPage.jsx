@@ -45,7 +45,6 @@ export default function PlayingPage() {
             object-cover
           "
         />
-
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/20"></div>
 
