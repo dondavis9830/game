@@ -236,7 +236,7 @@ export default function LevelCompleated() {
               text-white
             "
           >
-            🎉 Great Job!
+            Great Job!
           </p>
 
           <p
@@ -309,7 +309,7 @@ export default function LevelCompleated() {
               shadow-lg
             "
           >
-            Play Again 🎮
+            Play Again 
           </button>
 
 
@@ -353,7 +353,7 @@ export default function LevelCompleated() {
               active:scale-95
             "
           >
-            Home 🏠
+            Home 
           </button>
 
         </div>
