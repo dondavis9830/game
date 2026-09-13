@@ -3,46 +3,46 @@ import Header from "../components/Header";
 
 export default function PlayingPage2({ onNext }) {
   const cards = [
-    { id: 21, value: "11", image: "/image/chair.svg" },
-    { id: 22, value: "12", image: "/image/crown.svg" },
-    { id: 23, value: "13", image: "/image/stump.svg" },
-    { id: 24, value: "14", image: "/image/pineapple.svg" },
-    { id: 25, value: "15", image: "/image/deer.svg" },
-    { id: 5, value: "5", image: "/image/computer.svg" },
-    { id: 6, value: "6", image: "/image/brush.svg" },
-    { id: 7, value: "7", image: "/image/chair.svg" },
-    { id: 35, value: "16", image: "/image/computer.svg" },
-    { id: 36, value: "18", image: "/image/brush.svg" },
-    { id: 37, value: "11", image: "/image/chair.svg" },
-    { id: 38, value: "20", image: "/image/lipstick.svg" },
-    { id: 26, value: "15", image: "/image/deer.svg" },
-    { id: 27, value: "16", image: "/image/computer.svg" },
-    { id: 28, value: "17", image: "/image/space.svg" },
-    { id: 29, value: "18", image: "/image/brush.svg" },
-    { id: 30, value: "13", image: "/image/stump.svg" },
     { id: 1, value: "1", image: "/image/space.svg" },
     { id: 2, value: "2", image: "/image/pineapple.svg" },
-    { id: 8, value: "8", image: "/image/lipstick.svg" },
-    { id: 9, value: "3", image: "/image/moon.svg" },
-    { id: 10, value: "8", image: "/image/lipstick.svg" },
-    { id: 17, value: "5", image: "/image/computer.svg" },
-    { id: 18, value: "1", image: "/image/space.svg" },
-    { id: 19, value: "6", image: "/image/brush.svg" },
-    { id: 20, value: "10", image: "/image/stump.svg" },
-    { id: 31, value: "17", image: "/image/space.svg" },
-    { id: 32, value: "14", image: "/image/pineapple.svg" },
-    { id: 33, value: "19", image: "/image/moon.svg" },
-    { id: 34, value: "12", image: "/image/crown.svg" },
-    { id: 11, value: "7", image: "/image/chair.svg" },
-    { id: 12, value: "4", image: "/image/crown.svg" },
+    { id: 3, value: "3", image: "/image/moon.svg" },
     { id: 13, value: "10", image: "/image/stump.svg" },
     { id: 14, value: "2", image: "/image/pineapple.svg" },
     { id: 15, value: "9", image: "/image/deer.svg" },
+    { id: 8, value: "8", image: "/image/lipstick.svg" },
+    { id: 9, value: "3", image: "/image/moon.svg" },
+    { id: 10, value: "8", image: "/image/lipstick.svg" },
+    { id: 11, value: "7", image: "/image/chair.svg" },
+    { id: 12, value: "4", image: "/image/crown.svg" },
+    { id: 19, value: "6", image: "/image/brush.svg" },
+    { id: 20, value: "10", image: "/image/stump.svg" },
+    { id: 21, value: "11", image: "/image/apple.svg" },
+    { id: 22, value: "12", image: "/image/auto.svg" },
+    { id: 37, value: "11", image: "/image/apple.svg" },
+    { id: 25, value: "15", image: "/image/earth.svg" },
+    { id: 26, value: "15", image: "/image/earth.svg" },
+    { id: 27, value: "16", image: "/image/football.svg" },
+    { id: 28, value: "17", image: "/image/lion.svg" },
+    { id: 23, value: "13", image: "/image/bat.svg" },
+    { id: 24, value: "14", image: "/image/bottle.svg" },
     { id: 16, value: "9", image: "/image/deer.svg" },
-    { id: 3, value: "3", image: "/image/moon.svg" },
+    { id: 17, value: "5", image: "/image/computer.svg" },
+    { id: 18, value: "1", image: "/image/space.svg" },
     { id: 4, value: "4", image: "/image/crown.svg" },
-    { id: 39, value: "19", image: "/image/moon.svg" },
-    { id: 40, value: "20", image: "/image/lipstick.svg" },
+    { id: 5, value: "5", image: "/image/computer.svg" },
+    { id: 6, value: "6", image: "/image/brush.svg" },
+    { id: 7, value: "7", image: "/image/chair.svg" },
+    { id: 33, value: "19", image: "/image/pencil.svg" },
+    { id: 34, value: "12", image: "/image/auto.svg" },
+    { id: 29, value: "18", image: "/image/orange.svg" },
+    { id: 30, value: "13", image: "/image/bat.svg" },
+    { id: 31, value: "17", image: "/image/lion.svg" },
+    { id: 32, value: "14", image: "/image/bottle.svg" },
+    { id: 38, value: "20", image: "/image/train.svg" },
+    { id: 35, value: "16", image: "/image/football.svg" },
+    { id: 36, value: "18", image: "/image/orange.svg" },
+    { id: 39, value: "19", image: "/image/pencil.svg" },
+    { id: 40, value: "20", image: "/image/train.svg" },
   ];
 
   const [flipped, setFlipped] = useState([]);
@@ -118,14 +118,14 @@ export default function PlayingPage2({ onNext }) {
 
         {/* Players Score */}
         <div className="w-full max-w-7xl flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-6 mb-4">
-          <div className={`w-full sm:w-auto min-w-[150px] px-5 py-3 rounded-xl text-center text-white shadow-lg ${currentPlayer === 1 ? "bg-green-600 scale-105" : "bg-purple-700"}`}>
+          <div className={`w-full sm:w-auto min-w-[150px] px-5 py-2 rounded-xl text-center text-white shadow-lg ${currentPlayer === 1 ? "bg-green-600 scale-105" : "bg-purple-700"}`}>
             <h2 className="text-lg sm:text-xl font-bold">Player 1</h2>
             <p className="text-2xl sm:text-3xl font-bold">{player1Score}</p>
           </div>
 
           <div className="text-white text-xl sm:text-2xl font-bold">VS</div>
 
-          <div className={`w-full sm:w-auto min-w-[150px] px-5 py-3 rounded-xl text-center text-white shadow-lg ${currentPlayer === 2 ? "bg-green-600 scale-105" : "bg-purple-700"}`}>
+          <div className={`w-full sm:w-auto min-w-[150px] px-5 py-2 rounded-xl text-center text-white shadow-lg ${currentPlayer === 2 ? "bg-green-600 scale-105" : "bg-purple-700"}`}>
             <h2 className="text-lg sm:text-xl font-bold">Player 2</h2>
             <p className="text-2xl sm:text-3xl font-bold">{player2Score}</p>
           </div>
