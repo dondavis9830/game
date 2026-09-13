@@ -46,7 +46,7 @@ export default function GameHome() {
         {/* Main Content */}
         <div className="relative z-10 min-h-[calc(100vh-80px)] flex items-center justify-center px-4 sm:px-6 lg:px-10 py-10">
 
-          <div className="w-full max-w-6xl flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16">
+          <div className="w-full max-w-6xl flex flex-col-reverse lg:flex-row items-center justify-center gap-8 lg:gap-16">
 
 
             {/* LEFT SIDE */}
